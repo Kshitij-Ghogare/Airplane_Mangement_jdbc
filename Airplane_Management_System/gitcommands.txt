@@ -1,0 +1,58 @@
+git --version : It shows you the version of the git software
+git init : It initialized the git so that a specific directory is managed by the git program, It starts tracking the changes in the specified directory
+git status : It displays the status of the file you have changed or removed or added into the git directory
+git add file1
+git add file1 file2
+git add *
+git add -A
+git rm --cached file1 or git rm --cached *  : It will remove the files or folders from the caching/staging area to the working area
+git rm --cached * -f : In case files are not moving back to working area from staging area we have to use the force option
+git commit : It will commit all the files from staging area to the local repository
+git commit -m "updated version for git commands"
+git log : will show you the commit log for the commited files in the local repository
+git diff : It will show the difference between the current file and the latest commited file
+git diff --staged : It will show the difference between the staging area and the current version of the commit
+git show : will show the difference between the latest commit and the current file
+git config --global user.name "Parag Joshi"
+git config --global user.email "parag.joshi@hematitecorp.com"
+git reset [commit] - This command will undo all the commits after the specified commit and preserves the changes locally
+git reset --hard [commit] - This command discards all history and goes bac to the specified commit
+git config --list : list of all configuration parameters
+git ls-files : it will list down all the files which are in the local repository
+git ls-tree --full-tree --name-only -r HEAD
+git log --pretty=oneline
+git log --pretty=full
+git log --pretty=medium
+git log --pretty=short
+git log --pretty=fuller
+git log --pretty=email
+
+Git Branching
+Branches in git are nothing but pointers to a specific commit
+
+There are 2 types of branches
+1. Local branch - It is just another path or your working tree. 
+2. Remote tracking branches - They have special purposes for linking your work from the local repository to the work on central repository, The automatically detect which remote branches to get changes from, who you use the command git pull
+
+git branch - it will display the list of all branches
+git branch <branchname> - It will create the branchname
+git checkout branchname - It will change the head pointer to test branch
+git merge <branchname> - It will merge other branch with the master branch
+git branch -d <branchname> - It will delete the branch
+git checkout -b <branchname> - It will create a new branch and checkout the new branch at the same time
+git rebase master - This is also a way of combining the work between different branches
+
+git remote add origin "git code url" - This will link local repository with the remote repository
+
+git remote - It will show the list of remote repositories
+
+git push origin master - it will push all my code from local repository to remote repository
+
+git pull origin master - it will copy all the code from your remote repository to the local repository
+
+git clone "git url" - it will copy the entire repository to the specific folder on your device
+
+
+
+
+
