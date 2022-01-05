@@ -8,6 +8,7 @@ public class HomePage {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("welcome");
+		System.out.println("Hii");
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Select if you are Admin:1 or Customer:2");
 		int choice=sc.nextInt();
